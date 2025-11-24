@@ -4,11 +4,10 @@ import Home from "./Components/Home";
 
 function App() {
   return (
-    
-      
     <>
       <Navbar />
       <Background/>
+      <Home/>
       
     </>
   );
