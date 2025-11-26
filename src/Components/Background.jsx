@@ -1,16 +1,17 @@
-import React from 'react'
-import Background2 from '../Assets/Background2.jpg'
+import React from 'react';
+import Background2 from '../Assets/Background2.jpg';
+
 function Background() {
   return (
-   <div className="relative bg-transparent w-full h-screen">
-  <img 
-    src={Background2} 
-    alt="Background Image" 
-    className="w-full h-screen object-cover absolute inset-0 -z-10"
-  />
-</div>
-
-  )
+    <div className="fixed inset-0 w-full h-full -z-10">
+      <img 
+        src={Background2} 
+        alt="Travel Background" 
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
+    </div>
+  );
 }
 
-export default Background
+export default Background;
